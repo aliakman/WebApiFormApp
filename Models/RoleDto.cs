@@ -1,16 +1,18 @@
-﻿namespace WebApiFormApp.Models;
+﻿using Newtonsoft.Json;
+
+namespace WebApiFormApp.Models;
 
 public class RoleDto
 {
-    public Guid Id { get; set; }
-    public RoleNameDto Name { get; set; } = new();
+    [JsonProperty("id")]
+    public ValueObjectDto<Guid> Id { get; set; }
+
+    [JsonProperty("name")]
+    public ValueObjectDto<string> Name { get; set; }
 }
 
-public class RoleNameDto
+public class RoleResponseWrapper
 {
-    // API'den gelen "name" nesnesinin içindeki gerçek metin alanı
-    // Eğer API'de bu alanın adı farklıysa (örn: "Value") ona göre değiştirin.
-    public string Value { get; set; } = string.Empty;
-
-    public override string ToString() => Value;
+    [JsonProperty("role")]
+    public RoleDto Role { get; set; }
 }

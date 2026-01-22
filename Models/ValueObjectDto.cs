@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Newtonsoft.Json;
 
 namespace WebApiFormApp.Models
 {
-    public class ValueObjectDto
+    public class ValueObjectDto<T>
     {
-        // Bu sınıf sadece FirstName, LastName gibi nesne dönen yerler için
-        public object Value { get; set; } = default!;
+        [JsonProperty("value")]
+        public T Value { get; set; }
+
         public override string ToString() => Value?.ToString() ?? string.Empty;
     }
 }

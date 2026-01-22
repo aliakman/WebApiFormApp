@@ -78,6 +78,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(162, 23);
             txtPassword.TabIndex = 2;
+            txtPassword.Text = "Admin123*";
             // 
             // txtEmail
             // 
@@ -85,6 +86,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(162, 23);
             txtEmail.TabIndex = 1;
+            txtEmail.Text = "admin@system.com";
             // 
             // txtRegLastName
             // 

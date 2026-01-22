@@ -14,10 +14,12 @@ namespace WebApiFormApp.Services
 
         public AuthService(IHttpClientFactory httpClientFactory, Info info)
         {
+            // Program.cs'de tanýmladýðýmýz "api" ayarlarýný (BaseAddress vb.) yükler
             _httpClient = httpClientFactory.CreateClient("api");
             _baseUrl = _httpClient.BaseAddress?.ToString() ?? "http://localhost:5183/api/";
             _info = info;
 
+            // Her istekte güncel token'ý ekle
             if (!string.IsNullOrEmpty(_info.AccessToken))
             {
                 _httpClient.DefaultRequestHeaders.Authorization =
@@ -27,36 +29,25 @@ namespace WebApiFormApp.Services
 
         public async Task<bool> LoginAsync(string email, string password)
         {
-            try
+            var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}auth/login", new { email, password });
+            var jsonString = await response.Content.ReadAsStringAsync();
+
+            var result = JsonConvert.DeserializeObject<ApiResult<LoginSuccessData>>(jsonString);
+
+            if (result != null && result.IsSuccess && result.Data != null)
             {
-                var loginModel = new { email, password };
-                var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}auth/login", loginModel);
+                _info.SetEmail(email);
+                _info.SetPassword(password);
+                _info.SetUserId(result.Data.UserId);
+                _info.SetAccessToken(result.Data.AccessToken);
+                _info.SetRefreshToken(result.Data.RefreshToken);
 
-                var jsonString = await response.Content.ReadAsStringAsync();
+                _httpClient.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", _info.AccessToken);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    var result = JsonConvert.DeserializeObject<LoginRootResponse>(jsonString);
-
-                    if (result != null && result.Success && result.Data != null)
-                    {
-                        _info.SetAccessToken(result.Data.AccessToken);
-                        _info.SetRefreshToken(result.Data.RefreshToken);
-
-                        _httpClient.DefaultRequestHeaders.Authorization =
-                            new AuthenticationHeaderValue("Bearer", _info.AccessToken);
-
-                        return true;
-                    }
-                }
-
-                return false;
+                return true;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Hata: {ex.Message}");
-                return false;
-            }
+            return false;
         }
 
         public async Task<bool> Logout()

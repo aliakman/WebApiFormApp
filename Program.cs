@@ -18,12 +18,17 @@ static class Program
                 
                 services.AddSingleton<Info>();
 
-                services.AddHttpClient<AuthService>(c =>
-                    c.BaseAddress = new Uri("http://localhost:5183/api/"));
+                services.AddHttpClient("api", c =>
+                {
+                    c.BaseAddress = new Uri("http://localhost:5183/api/");
+                });
 
                 services.AddTransient<UserSettingsForm>();
                 services.AddTransient<LoginRegisterForm>();
+
                 services.AddTransient<AuthService>();
+                services.AddTransient<UserService>();
+                services.AddTransient<RoleService>();
 
             }).Build();
 

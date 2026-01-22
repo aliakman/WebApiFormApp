@@ -62,13 +62,13 @@ namespace WebApiFormApp
                 return;
             }
 
-            var newUser = new UserCreateRequest(
-                FirstName: txtRegFirstName.Text,
-                LastName: txtRegLastName.Text,
-                UserName: txtRegUserName.Text,
-                Email: txtEmail.Text.Trim(),
-                Password: txtPassword.Text
-            );
+            //var newUser = new UserCreateRequest(
+            //    FirstName: txtRegFirstName.Text,
+            //    LastName: txtRegLastName.Text,
+            //    UserName: txtRegUserName.Text,
+            //    Email: txtEmail.Text.Trim(),
+            //    Password: txtPassword.Text
+            //);
 
             //var success = await _apiService.RegisterAsync(newUser);
 

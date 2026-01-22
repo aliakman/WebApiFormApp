@@ -49,46 +49,46 @@
             btnProfile = new Button();
             pnlProfile = new Panel();
             btnSaveChangeProfile = new Button();
-            label2 = new Label();
-            btnUserCreate = new Button();
-            label8 = new Label();
-            cmbRolesUserCreate = new ComboBox();
-            label10 = new Label();
-            label11 = new Label();
-            txtPwUserCreate = new TextBox();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
             pnlUser = new Panel();
             txtEmailUserCreate = new TextBox();
             txtUNUserCreate = new TextBox();
             txtLNUserCreate = new TextBox();
             txtFNUserCreate = new TextBox();
             txtUNSearchUserUp = new TextBox();
+            btnUserCreate = new Button();
             label9 = new Label();
-            dataGridView1 = new DataGridView();
+            label8 = new Label();
+            dgvUsers = new DataGridView();
+            cmbRolesUserCreate = new ComboBox();
             btnUserUpdate = new Button();
             label22 = new Label();
             label23 = new Label();
+            label10 = new Label();
             cmbRolesUserUp = new ComboBox();
             txtEmailUserUp = new TextBox();
+            label11 = new Label();
             txtIDUserUp = new TextBox();
+            txtPwUserCreate = new TextBox();
             txtUNUserUp = new TextBox();
+            label12 = new Label();
             label24 = new Label();
+            label13 = new Label();
             txtLNUserUp = new TextBox();
+            label14 = new Label();
             label25 = new Label();
+            label15 = new Label();
             label26 = new Label();
             txtFNUserUp = new TextBox();
             label28 = new Label();
             label29 = new Label();
+            label2 = new Label();
             pnlRole = new Panel();
             btnRoleCreate = new Button();
             label19 = new Label();
             txtRNRoleCreate = new TextBox();
             textBox2 = new TextBox();
             label16 = new Label();
-            dataGridView2 = new DataGridView();
+            dgvRoles = new DataGridView();
             btnRoleUpdate = new Button();
             label17 = new Label();
             label18 = new Label();
@@ -98,9 +98,9 @@
             pnlSettingsMenu.SuspendLayout();
             pnlProfile.SuspendLayout();
             pnlUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             pnlRole.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvRoles).BeginInit();
             SuspendLayout();
             // 
             // btnLogout
@@ -312,104 +312,6 @@
             btnSaveChangeProfile.UseVisualStyleBackColor = true;
             btnSaveChangeProfile.Click += btnSaveChangeProfile_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(24, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 15);
-            label2.TabIndex = 53;
-            label2.Text = "Profile :";
-            // 
-            // btnUserCreate
-            // 
-            btnUserCreate.Enabled = false;
-            btnUserCreate.Location = new Point(424, 387);
-            btnUserCreate.Name = "btnUserCreate";
-            btnUserCreate.Size = new Size(121, 23);
-            btnUserCreate.TabIndex = 2;
-            btnUserCreate.Text = "Create";
-            btnUserCreate.UseVisualStyleBackColor = true;
-            btnUserCreate.Click += btnUserCreate_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(273, 214);
-            label8.Name = "label8";
-            label8.Size = new Size(73, 15);
-            label8.TabIndex = 53;
-            label8.Text = "Create User :";
-            // 
-            // cmbRolesUserCreate
-            // 
-            cmbRolesUserCreate.FormattingEnabled = true;
-            cmbRolesUserCreate.Location = new Point(425, 353);
-            cmbRolesUserCreate.Name = "cmbRolesUserCreate";
-            cmbRolesUserCreate.Size = new Size(121, 23);
-            cmbRolesUserCreate.TabIndex = 1;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(377, 359);
-            label10.Name = "label10";
-            label10.Size = new Size(38, 15);
-            label10.TabIndex = 50;
-            label10.Text = "Roles:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(376, 301);
-            label11.Name = "label11";
-            label11.Size = new Size(39, 15);
-            label11.TabIndex = 49;
-            label11.Text = "Email:";
-            // 
-            // txtPwUserCreate
-            // 
-            txtPwUserCreate.Location = new Point(425, 324);
-            txtPwUserCreate.Name = "txtPwUserCreate";
-            txtPwUserCreate.Size = new Size(162, 23);
-            txtPwUserCreate.TabIndex = 57;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(350, 272);
-            label12.Name = "label12";
-            label12.Size = new Size(68, 15);
-            label12.TabIndex = 48;
-            label12.Text = "User Name:";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(358, 330);
-            label13.Name = "label13";
-            label13.Size = new Size(60, 15);
-            label13.TabIndex = 47;
-            label13.Text = "Password:";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(352, 214);
-            label14.Name = "label14";
-            label14.Size = new Size(67, 15);
-            label14.TabIndex = 45;
-            label14.Text = "First Name:";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(352, 243);
-            label15.Name = "label15";
-            label15.Size = new Size(66, 15);
-            label15.TabIndex = 46;
-            label15.Text = "Last Name:";
-            // 
             // pnlUser
             // 
             pnlUser.Controls.Add(txtEmailUserCreate);
@@ -420,7 +322,7 @@
             pnlUser.Controls.Add(btnUserCreate);
             pnlUser.Controls.Add(label9);
             pnlUser.Controls.Add(label8);
-            pnlUser.Controls.Add(dataGridView1);
+            pnlUser.Controls.Add(dgvUsers);
             pnlUser.Controls.Add(cmbRolesUserCreate);
             pnlUser.Controls.Add(btnUserUpdate);
             pnlUser.Controls.Add(label22);
@@ -443,10 +345,11 @@
             pnlUser.Controls.Add(txtFNUserUp);
             pnlUser.Controls.Add(label28);
             pnlUser.Controls.Add(label29);
-            pnlUser.Location = new Point(495, 12);
+            pnlUser.Location = new Point(277, 9);
             pnlUser.Name = "pnlUser";
             pnlUser.Size = new Size(639, 458);
             pnlUser.TabIndex = 56;
+            pnlUser.Visible = false;
             // 
             // txtEmailUserCreate
             // 
@@ -488,6 +391,17 @@
             txtUNSearchUserUp.Size = new Size(162, 23);
             txtUNSearchUserUp.TabIndex = 55;
             // 
+            // btnUserCreate
+            // 
+            btnUserCreate.Enabled = false;
+            btnUserCreate.Location = new Point(424, 387);
+            btnUserCreate.Name = "btnUserCreate";
+            btnUserCreate.Size = new Size(121, 23);
+            btnUserCreate.TabIndex = 2;
+            btnUserCreate.Text = "Create";
+            btnUserCreate.UseVisualStyleBackColor = true;
+            btnUserCreate.Click += btnUserCreate_Click;
+            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -497,13 +411,30 @@
             label9.TabIndex = 56;
             label9.Text = "Search User Name:";
             // 
-            // dataGridView1
+            // label8
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 55);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(576, 150);
-            dataGridView1.TabIndex = 54;
+            label8.AutoSize = true;
+            label8.Location = new Point(273, 214);
+            label8.Name = "label8";
+            label8.Size = new Size(73, 15);
+            label8.TabIndex = 53;
+            label8.Text = "Create User :";
+            // 
+            // dgvUsers
+            // 
+            dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUsers.Location = new Point(12, 55);
+            dgvUsers.Name = "dgvUsers";
+            dgvUsers.Size = new Size(576, 150);
+            dgvUsers.TabIndex = 54;
+            // 
+            // cmbRolesUserCreate
+            // 
+            cmbRolesUserCreate.FormattingEnabled = true;
+            cmbRolesUserCreate.Location = new Point(425, 353);
+            cmbRolesUserCreate.Name = "cmbRolesUserCreate";
+            cmbRolesUserCreate.Size = new Size(121, 23);
+            cmbRolesUserCreate.TabIndex = 1;
             // 
             // btnUserUpdate
             // 
@@ -534,6 +465,15 @@
             label23.TabIndex = 52;
             label23.Text = "ID:";
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(377, 359);
+            label10.Name = "label10";
+            label10.Size = new Size(38, 15);
+            label10.TabIndex = 50;
+            label10.Text = "Roles:";
+            // 
             // cmbRolesUserUp
             // 
             cmbRolesUserUp.FormattingEnabled = true;
@@ -551,6 +491,15 @@
             txtEmailUserUp.Size = new Size(162, 23);
             txtEmailUserUp.TabIndex = 41;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(376, 301);
+            label11.Name = "label11";
+            label11.Size = new Size(39, 15);
+            label11.TabIndex = 49;
+            label11.Text = "Email:";
+            // 
             // txtIDUserUp
             // 
             txtIDUserUp.ForeColor = SystemColors.WindowText;
@@ -559,6 +508,13 @@
             txtIDUserUp.ReadOnly = true;
             txtIDUserUp.Size = new Size(162, 23);
             txtIDUserUp.TabIndex = 51;
+            // 
+            // txtPwUserCreate
+            // 
+            txtPwUserCreate.Location = new Point(425, 324);
+            txtPwUserCreate.Name = "txtPwUserCreate";
+            txtPwUserCreate.Size = new Size(162, 23);
+            txtPwUserCreate.TabIndex = 57;
             // 
             // txtUNUserUp
             // 
@@ -569,6 +525,15 @@
             txtUNUserUp.Size = new Size(162, 23);
             txtUNUserUp.TabIndex = 40;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(350, 272);
+            label12.Name = "label12";
+            label12.Size = new Size(68, 15);
+            label12.TabIndex = 48;
+            label12.Text = "User Name:";
+            // 
             // label24
             // 
             label24.AutoSize = true;
@@ -578,6 +543,15 @@
             label24.TabIndex = 50;
             label24.Text = "Roles:";
             // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(358, 330);
+            label13.Name = "label13";
+            label13.Size = new Size(60, 15);
+            label13.TabIndex = 47;
+            label13.Text = "Password:";
+            // 
             // txtLNUserUp
             // 
             txtLNUserUp.ForeColor = SystemColors.WindowText;
@@ -585,6 +559,15 @@
             txtLNUserUp.Name = "txtLNUserUp";
             txtLNUserUp.Size = new Size(162, 23);
             txtLNUserUp.TabIndex = 42;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(352, 214);
+            label14.Name = "label14";
+            label14.Size = new Size(67, 15);
+            label14.TabIndex = 45;
+            label14.Text = "First Name:";
             // 
             // label25
             // 
@@ -594,6 +577,15 @@
             label25.Size = new Size(39, 15);
             label25.TabIndex = 49;
             label25.Text = "Email:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(352, 243);
+            label15.Name = "label15";
+            label15.Size = new Size(66, 15);
+            label15.TabIndex = 46;
+            label15.Text = "Last Name:";
             // 
             // label26
             // 
@@ -630,6 +622,15 @@
             label29.TabIndex = 46;
             label29.Text = "Last Name:";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(24, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 53;
+            label2.Text = "Profile :";
+            // 
             // pnlRole
             // 
             pnlRole.Controls.Add(btnRoleCreate);
@@ -637,17 +638,18 @@
             pnlRole.Controls.Add(txtRNRoleCreate);
             pnlRole.Controls.Add(textBox2);
             pnlRole.Controls.Add(label16);
-            pnlRole.Controls.Add(dataGridView2);
+            pnlRole.Controls.Add(dgvRoles);
             pnlRole.Controls.Add(btnRoleUpdate);
             pnlRole.Controls.Add(label17);
             pnlRole.Controls.Add(label18);
             pnlRole.Controls.Add(textBox8);
             pnlRole.Controls.Add(txtRNRoleUp);
             pnlRole.Controls.Add(label27);
-            pnlRole.Location = new Point(312, 489);
+            pnlRole.Location = new Point(313, 9);
             pnlRole.Name = "pnlRole";
             pnlRole.Size = new Size(598, 416);
             pnlRole.TabIndex = 57;
+            pnlRole.Visible = false;
             // 
             // btnRoleCreate
             // 
@@ -693,13 +695,13 @@
             label16.TabIndex = 56;
             label16.Text = "Search Role Name:";
             // 
-            // dataGridView2
+            // dgvRoles
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(12, 55);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(576, 150);
-            dataGridView2.TabIndex = 54;
+            dgvRoles.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRoles.Location = new Point(12, 55);
+            dgvRoles.Name = "dgvRoles";
+            dgvRoles.Size = new Size(576, 150);
+            dgvRoles.TabIndex = 54;
             // 
             // btnRoleUpdate
             // 
@@ -773,10 +775,10 @@
             pnlProfile.PerformLayout();
             pnlUser.ResumeLayout(false);
             pnlUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             pnlRole.ResumeLayout(false);
             pnlRole.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvRoles).EndInit();
             ResumeLayout(false);
         }
 
@@ -821,7 +823,7 @@
         private Label label14;
         private Label label15;
         private Panel pnlUser;
-        private DataGridView dataGridView1;
+        private DataGridView dgvUsers;
         private Button btnUserUpdate;
         private Label label22;
         private Label label23;
@@ -841,7 +843,7 @@
         private Panel pnlRole;
         private TextBox textBox2;
         private Label label16;
-        private DataGridView dataGridView2;
+        private DataGridView dgvRoles;
         private Button btnRoleUpdate;
         private Label label17;
         private Label label18;

@@ -1,114 +1,83 @@
 ﻿using Newtonsoft.Json;
-using System.Text;
+using System.Net.Http.Headers;
 using WebApiFormApp.Models;
+using WebApiFormApp.Statics;
 
 namespace WebApiFormApp.Services
 {
-    public class UserService : IApiService
+    public class UserService
     {
-        private readonly string _baseUrl = "http://localhost:5183/api/user"; // PORTU KENDİNE GÖRE DÜZELT
         private readonly HttpClient _httpClient;
+        private readonly string _baseUrl;
+        private readonly Info _info;
 
-        public UserService()
+        public UserService(IHttpClientFactory httpClientFactory, Info info)
         {
-            _httpClient = new HttpClient();
+            _httpClient = httpClientFactory.CreateClient("api");
+            _baseUrl = _httpClient.BaseAddress?.ToString() ?? "http://localhost:5183/api/";
+            _info = info;
+
+            if (!string.IsNullOrEmpty(_info.AccessToken))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization =
+                   new AuthenticationHeaderValue("Bearer", _info.AccessToken);
+            }
         }
 
-        // GET LIST
-        public async Task<List<UserDto>> GetAllAsync()
+        public async Task<UserDto> GetMyProfile()
         {
-            var response = await _httpClient.GetAsync($"{_baseUrl}/getall");
+            if (!string.IsNullOrEmpty(_info.AccessToken))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", _info.AccessToken);
+            }
+            
+            var response = await _httpClient.GetAsync($"{_baseUrl}user/{_info.UserId}");
 
             if (response.IsSuccessStatusCode)
             {
                 var jsonString = await response.Content.ReadAsStringAsync();
-                var result = JsonConvert.DeserializeObject<ApiResponse<List<UserDto>>>(jsonString);
 
-                if (result != null && result.Success)
+                var result = JsonConvert.DeserializeObject<ApiResult<UserDto>>(jsonString);
+
+                if (result != null && result.IsSuccess)
                 {
                     return result.Data;
                 }
             }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                MessageBox.Show($"Hata Detayı: {errorContent}");
+                return new UserDto();
+            }
+
+            return new UserDto();
+        }
+
+        public async Task<List<UserDto>> GetAllUsersAsync()
+        {
+            if (!string.IsNullOrEmpty(_info.AccessToken))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", _info.AccessToken);
+            }
+
+            var response = await _httpClient.GetAsync($"{_baseUrl}user/users");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+
+                var result = JsonConvert.DeserializeObject<ApiResult<List<UserDto>>>(jsonString);
+
+                if (result != null && result.IsSuccess)
+                {
+                    return result.Data;
+                }
+            }
+
             return new List<UserDto>();
-        }
-
-        // Register
-        public async Task<string> RegisterAsync(UserDto user)
-        {
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync($"{_baseUrl}/register", content);
-            var jsonString = await response.Content.ReadAsStringAsync();
-
-            // API'nin hata mesajını veya başarı mesajını yakalayalım
-            try
-            {
-                var result = JsonConvert.DeserializeObject<ApiResponse<object>>(jsonString);
-                return result.Message; // API'den gelen "Kullanıcı eklendi" mesajı
-            }
-            catch
-            {
-                return response.IsSuccessStatusCode ? "İşlem Başarılı" : "Hata oluştu";
-            }
-        }
-
-        // UPDATE
-        public async Task<string> UpdateAsync(UserDto user)
-        {
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.PostAsync($"{_baseUrl}/update", content); // Clean Arch genelde POST kullanır update için de
-            var jsonString = await response.Content.ReadAsStringAsync();
-
-            try
-            {
-                var result = JsonConvert.DeserializeObject<ApiResponse<object>>(jsonString);
-                return result.Message;
-            }
-            catch
-            {
-                return response.IsSuccessStatusCode ? "Güncellendi" : "Güncelleme Hatası";
-            }
-        }
-
-        // DELETE
-        // Not: Clean Architecture projelerinde bazen Delete de POST ile yapılır, 
-        // bazen entity gönderilir. Standart HTTP Delete varsayıyorum:
-        public async Task<string> DeleteAsync(UserDto user)
-        {
-            var json = JsonConvert.SerializeObject(user);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            // Eğer senin API'de Delete işlemi ID ile değil de Body ile çalışıyorsa:
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Delete,
-                RequestUri = new Uri($"{_baseUrl}/delete"),
-                Content = content
-            };
-
-            var response = await _httpClient.SendAsync(request);
-            var jsonString = await response.Content.ReadAsStringAsync();
-
-            var result = JsonConvert.DeserializeObject<ApiResponse<object>>(jsonString);
-            return result.Message;
-        }
-
-        public Task<bool> CreateAsync<T>(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> UpdateByIdAsync(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> DeleteByIdAsync(Guid id)
-        {
-            throw new NotImplementedException();
         }
     }
 }
