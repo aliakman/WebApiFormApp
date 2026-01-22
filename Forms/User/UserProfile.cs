@@ -37,14 +37,14 @@ namespace WebApiFormApp.Forms.User
         {
             //string id = "9f30e046-601e-41b4-933e-0282d8c3065d";
             //Info.SetID(Guid.Parse(id));
-            var user = _apiService.GetUserByIdAsync(Info.ID).Result;
-            _txtId.Text = user.Id.ToString();
-            _txtFN.Text = user.FirstName.ToString();
-            _txtLN.Text = user.LastName.ToString();
-            _txtUN.Text = user.UserName.ToString();
-            _txtEmail.Text = user.Email.ToString();
-            _txtPw.Text = string.Empty;
-            _cmbRoles.Items.AddRange(user.Roles.ToArray());
+            //var user = _apiService.GetUserByIdAsync(Info.ID).Result;
+            //_txtId.Text = user.Id.ToString();
+            //_txtFN.Text = user.FirstName.ToString();
+            //_txtLN.Text = user.LastName.ToString();
+            //_txtUN.Text = user.UserName.ToString();
+            //_txtEmail.Text = user.Email.ToString();
+            //_txtPw.Text = string.Empty;
+            //_cmbRoles.Items.AddRange(user.Roles.ToArray());
         }
 
     }

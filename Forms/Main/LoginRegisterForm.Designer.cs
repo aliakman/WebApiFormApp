@@ -57,34 +57,34 @@
             btnRegister.Location = new Point(120, 212);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(75, 23);
-            btnRegister.TabIndex = 9;
+            btnRegister.TabIndex = 6;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(128, 125);
+            btnLogin.Location = new Point(124, 125);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 23);
-            btnLogin.TabIndex = 8;
+            btnLogin.TabIndex = 3;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(87, 96);
+            txtPassword.Location = new Point(83, 96);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(162, 23);
-            txtPassword.TabIndex = 30;
+            txtPassword.TabIndex = 2;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(87, 67);
+            txtEmail.Location = new Point(83, 67);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(162, 23);
-            txtEmail.TabIndex = 33;
+            txtEmail.TabIndex = 1;
             // 
             // txtRegLastName
             // 
@@ -92,7 +92,7 @@
             txtRegLastName.Location = new Point(80, 96);
             txtRegLastName.Name = "txtRegLastName";
             txtRegLastName.Size = new Size(162, 23);
-            txtRegLastName.TabIndex = 24;
+            txtRegLastName.TabIndex = 2;
             // 
             // txtRegEmail
             // 
@@ -100,7 +100,7 @@
             txtRegEmail.Location = new Point(80, 154);
             txtRegEmail.Name = "txtRegEmail";
             txtRegEmail.Size = new Size(162, 23);
-            txtRegEmail.TabIndex = 23;
+            txtRegEmail.TabIndex = 4;
             // 
             // txtRegUserName
             // 
@@ -108,7 +108,7 @@
             txtRegUserName.Location = new Point(80, 125);
             txtRegUserName.Name = "txtRegUserName";
             txtRegUserName.Size = new Size(162, 23);
-            txtRegUserName.TabIndex = 22;
+            txtRegUserName.TabIndex = 3;
             // 
             // textRegPw
             // 
@@ -116,7 +116,7 @@
             textRegPw.Location = new Point(80, 183);
             textRegPw.Name = "textRegPw";
             textRegPw.Size = new Size(162, 23);
-            textRegPw.TabIndex = 21;
+            textRegPw.TabIndex = 5;
             // 
             // txtRegFirstName
             // 
@@ -124,7 +124,7 @@
             txtRegFirstName.Location = new Point(80, 67);
             txtRegFirstName.Name = "txtRegFirstName";
             txtRegFirstName.Size = new Size(162, 23);
-            txtRegFirstName.TabIndex = 26;
+            txtRegFirstName.TabIndex = 1;
             // 
             // pnlReg
             // 
@@ -140,7 +140,7 @@
             pnlReg.Controls.Add(txtRegLastName);
             pnlReg.Controls.Add(txtRegUserName);
             pnlReg.Controls.Add(txtRegEmail);
-            pnlReg.Location = new Point(259, 23);
+            pnlReg.Location = new Point(249, 45);
             pnlReg.Name = "pnlReg";
             pnlReg.Size = new Size(264, 288);
             pnlReg.TabIndex = 27;
@@ -196,7 +196,7 @@
             btnToLogin.Location = new Point(97, 241);
             btnToLogin.Name = "btnToLogin";
             btnToLogin.Size = new Size(122, 23);
-            btnToLogin.TabIndex = 27;
+            btnToLogin.TabIndex = 7;
             btnToLogin.Text = "To The Login Screen";
             btnToLogin.UseVisualStyleBackColor = true;
             btnToLogin.Click += btnToLogin_Click;
@@ -209,15 +209,15 @@
             pnlLogin.Controls.Add(txtEmail);
             pnlLogin.Controls.Add(txtPassword);
             pnlLogin.Controls.Add(btnLogin);
-            pnlLogin.Location = new Point(259, 23);
+            pnlLogin.Location = new Point(249, 48);
             pnlLogin.Name = "pnlLogin";
-            pnlLogin.Size = new Size(275, 288);
+            pnlLogin.Size = new Size(260, 288);
             pnlLogin.TabIndex = 28;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(21, 99);
+            label2.Location = new Point(17, 99);
             label2.Name = "label2";
             label2.Size = new Size(60, 15);
             label2.TabIndex = 32;
@@ -226,7 +226,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(42, 70);
+            label1.Location = new Point(38, 70);
             label1.Name = "label1";
             label1.Size = new Size(39, 15);
             label1.TabIndex = 31;
@@ -235,10 +235,10 @@
             // btnToReg
             // 
             btnToReg.BackColor = Color.Transparent;
-            btnToReg.Location = new Point(103, 153);
+            btnToReg.Location = new Point(99, 153);
             btnToReg.Name = "btnToReg";
             btnToReg.Size = new Size(121, 23);
-            btnToReg.TabIndex = 28;
+            btnToReg.TabIndex = 4;
             btnToReg.Text = "Create New User";
             btnToReg.UseVisualStyleBackColor = false;
             btnToReg.Click += btnToReg_Click;

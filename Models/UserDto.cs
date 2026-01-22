@@ -44,7 +44,3 @@ public record UserUpdateRequest(
     Guid UserID,
     string FirstName,
     string LastName);
-
-public record LoginResponse(
-    string Token, 
-    DateTime Expiration);

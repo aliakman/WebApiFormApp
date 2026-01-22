@@ -1,7 +1,6 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApiFormApp.Services;
-using WebApiFormApp.Statics;
 
 namespace WebApiFormApp;
 
@@ -15,14 +14,16 @@ static class Program
 
         var host = Host.CreateDefaultBuilder()
             .ConfigureServices((services) => {
-                
-                services.AddSingleton<Info>();
+                //services.AddHttpClient<AuthService>(c =>
+                //    c.BaseAddress = new Uri("http://localhost:5183/api/"));
 
                 services.AddHttpClient<AuthService>(c =>
                     c.BaseAddress = new Uri("http://localhost:5183/api/"));
-
+                //services.AddTransient<LoginForm>();
                 services.AddTransient<UserSettingsForm>();
+                //services.AddTransient<RegisterForm>();
                 services.AddTransient<LoginRegisterForm>();
+                //services.AddTransient<MainForm>();
                 services.AddTransient<AuthService>();
 
             }).Build();

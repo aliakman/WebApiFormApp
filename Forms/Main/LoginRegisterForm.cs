@@ -1,18 +1,21 @@
 ﻿using WebApiFormApp.Models;
 using WebApiFormApp.Services;
-using WebApiFormApp.Statics;
+//using WebApiFormApp.Services;
+//using WebApiFormApp.Statics;
 
 namespace WebApiFormApp
 {
     public partial class LoginRegisterForm : Form
     {
 
-        private readonly IApiService _apiService;
+        //private readonly IApiService _apiService;
+        private readonly AuthService _authService;
 
-        public LoginRegisterForm(IApiService apiService)
+        public LoginRegisterForm(/*IApiService apiService*/AuthService authService)
         {
             InitializeComponent();
-            _apiService = apiService;
+            //_apiService = apiService;
+            _authService = authService;
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -24,19 +27,19 @@ namespace WebApiFormApp
             }
 
             // 2. API'ye giriş isteği gönder
-            var success = await _apiService.LoginAsync(txtEmail.Text, txtPassword.Text);
+            var success = await _authService.LoginAsync(txtEmail.Text, txtPassword.Text);
 
             if (success)
             {
-                var users = await _apiService.GetUsersAsync();
-                foreach (var user in users)
-                {
-                    if (user.Email.ToString() == txtEmail.Text)
-                    {
-                        Info.SetID(new Guid(user.Id.ToString()));
-                        break;
-                    }
-                }
+                //var users = await _apiService.GetUsersAsync();
+                //foreach (var user in users)
+                //{
+                //    if (user.Email.ToString() == txtEmail.Text)
+                //    {
+                //        Info.SetID(new Guid(user.Id.ToString()));
+                //        break;
+                //    }
+                //}
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -67,17 +70,17 @@ namespace WebApiFormApp
                 Password: txtPassword.Text
             );
 
-            var success = await _apiService.RegisterAsync(newUser);
+            //var success = await _apiService.RegisterAsync(newUser);
 
-            if (success)
-            {
-                MessageBox.Show("Kayıt başarılı! Giriş ekranına yönlendiriliyorsunuz.");
-                SetPanels(true);
-            }
-            else
-            {
-                MessageBox.Show("Kayıt sırasında bir hata oluştu.");
-            }
+            //if (success)
+            //{
+            //    MessageBox.Show("Kayıt başarılı! Giriş ekranına yönlendiriliyorsunuz.");
+            //    SetPanels(true);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Kayıt sırasında bir hata oluştu.");
+            //}
         }
 
         private void btnToReg_Click(object sender, EventArgs e)

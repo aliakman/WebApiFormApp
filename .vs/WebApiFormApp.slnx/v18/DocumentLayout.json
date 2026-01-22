@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\forms\\main\\loginregisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:forms\\main\\loginregisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\statics\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:statics\\info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\valueobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\valueobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\forms\\user\\usersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:forms\\user\\usersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\forms\\user\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:forms\\user\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\forms\\main\\loginregisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:forms\\main\\loginregisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\apiresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\forms\\user\\usersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:forms\\user\\usersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\iapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\iapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|c:\\users\\administrator\\desktop\\projects\\webapiformapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED2C0A4-6306-2FB6-384E-F52F571D6A9A}|WebApiFormApp.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 321,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,118 +70,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ValueObjectDto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ValueObjectDto.cs",
-              "RelativeDocumentMoniker": "Models\\ValueObjectDto.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ValueObjectDto.cs",
-              "RelativeToolTip": "Models\\ValueObjectDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:17:10.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApiResult.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ApiResult.cs",
-              "RelativeDocumentMoniker": "Models\\ApiResult.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ApiResult.cs",
-              "RelativeToolTip": "Models\\ApiResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:03:57.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoleDto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\RoleDto.cs",
-              "RelativeDocumentMoniker": "Models\\RoleDto.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\RoleDto.cs",
-              "RelativeToolTip": "Models\\RoleDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:02:02.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\UserDto.cs",
-              "RelativeDocumentMoniker": "Models\\UserDto.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\UserDto.cs",
-              "RelativeToolTip": "Models\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\UserSession.cs",
+              "RelativeDocumentMoniker": "Services\\UserSession.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\UserSession.cs",
+              "RelativeToolTip": "Services\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T11:32:22.899Z",
+              "WhenOpened": "2026-01-22T05:49:03.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T05:33:43.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginRegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\Main\\LoginRegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\Main\\LoginRegisterForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\Main\\LoginRegisterForm.cs",
-              "RelativeToolTip": "Forms\\Main\\LoginRegisterForm.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswB4AAAAQAAAAAAAAAA==",
+              "Title": "Info.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Statics\\Info.cs",
+              "RelativeDocumentMoniker": "Statics\\Info.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Statics\\Info.cs",
+              "RelativeToolTip": "Statics\\Info.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T11:29:29.991Z",
+              "WhenOpened": "2026-01-22T05:18:35.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Forms\\User\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserProfile.cs",
-              "RelativeToolTip": "Forms\\User\\UserProfile.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswC4AAAA7AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\AuthService.cs*",
+              "RelativeToolTip": "Services\\AuthService.cs*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwBUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T06:42:49.912Z",
+              "WhenOpened": "2026-01-21T13:20:57.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "UserSettingsForm.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserSettingsForm.cs",
               "RelativeDocumentMoniker": "Forms\\User\\UserSettingsForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserSettingsForm.cs",
               "RelativeToolTip": "Forms\\User\\UserSettingsForm.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAswHwAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAYwLcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T08:38:09.235Z",
+              "WhenOpened": "2026-01-21T11:26:35.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginRegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\Main\\LoginRegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Main\\LoginRegisterForm.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\Main\\LoginRegisterForm.cs",
+              "RelativeToolTip": "Forms\\Main\\LoginRegisterForm.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T11:24:58.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserSettingsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserSettingsForm.cs",
-              "RelativeDocumentMoniker": "Forms\\User\\UserSettingsForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Forms\\User\\UserSettingsForm.cs [Design]",
-              "RelativeToolTip": "Forms\\User\\UserSettingsForm.cs [Design]",
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\UserDto.cs",
+              "RelativeToolTip": "Models\\UserDto.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADgvy0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T11:42:39.387Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-21T11:12:06.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "Services\\ApiService.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\ApiService.cs",
               "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAtwEUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T13:14:05.95Z",
+              "WhenOpened": "2026-01-21T10:57:37.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\IApiService.cs",
+              "RelativeDocumentMoniker": "Services\\IApiService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\IApiService.cs",
+              "RelativeToolTip": "Services\\IApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:50:36.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:45:51.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\WebApiFormApp\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:44:23.133Z",
               "EditorCaption": ""
             }
           ]
