@@ -18,6 +18,9 @@ namespace WebApiFormApp.Models
 
         [JsonProperty("email")]
         public string Email { get; set; } = string.Empty;
+        
+        [JsonProperty("password")]
+        public string Password { get; set; } = string.Empty;
 
         [JsonProperty("isActive")]
         public bool IsActive { get; set; }

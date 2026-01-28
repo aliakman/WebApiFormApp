@@ -52,3 +52,7 @@ C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\
 C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
 C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\Bunifu.Licensing.dll
+C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\Bunifu.UI.WinForms.dll
+C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\System.Management.dll
+C:\Users\Administrator\Desktop\Projects\WebApiFormApp\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\System.Management.dll

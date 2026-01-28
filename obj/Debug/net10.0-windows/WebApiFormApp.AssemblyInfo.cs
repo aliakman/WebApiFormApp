@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiFormApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a244771a1f270023ced9e1eb9dc4cc459280845c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0b53fc011a424c8e337e6832d598e96396d98ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiFormApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiFormApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

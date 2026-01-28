@@ -2,6 +2,41 @@
   "version": 3,
   "targets": {
     "net10.0-windows7.0": {
+      "Bunifu.Licensing/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Management": "9.0.4"
+        },
+        "compile": {
+          "lib/net9.0-windows7.0/Bunifu.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows7.0/Bunifu.Licensing.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "Bunifu.UI.WinForms/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "bunifu.licensing": "6.3.0"
+        },
+        "compile": {
+          "lib/net9.0-windows7.0/Bunifu.UI.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-windows7.0/Bunifu.UI.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "Microsoft.Extensions.Configuration/10.0.1": {
         "type": "package",
         "dependencies": {
@@ -693,10 +728,84 @@
             "related": ".xml"
           }
         }
+      },
+      "System.Management/9.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "Bunifu.Licensing/6.3.0": {
+      "sha512": "rxUZsV8xTIIwLW7haxMwg1ZfyjXR7p5geF7/7ymqnIwz0TDdYjwOtIZmkO85+c+nRnJHrpmCr5gZpSKHsWwaag==",
+      "type": "package",
+      "path": "bunifu.licensing/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.txt",
+        "LICENSING README.md",
+        "bunifu.licensing.6.3.0.nupkg.sha512",
+        "bunifu.licensing.nuspec",
+        "lib/net462/Bunifu.Licensing.dll",
+        "lib/net472/Bunifu.Licensing.dll",
+        "lib/net48/Bunifu.Licensing.dll",
+        "lib/net5.0-windows7.0/Bunifu.Licensing.dll",
+        "lib/net6.0-windows7.0/Bunifu.Licensing.dll",
+        "lib/net7.0-windows7.0/Bunifu.Licensing.dll",
+        "lib/net8.0-windows7.0/Bunifu.Licensing.dll",
+        "lib/net9.0-windows7.0/Bunifu.Licensing.dll"
+      ]
+    },
+    "Bunifu.UI.WinForms/9.1.0": {
+      "sha512": "lplpYBOy8757GMtrTwBJJFwMNLpkYTUUN6P3FS4lTPqfNXjPki7x95h4cy7rmldzNQ4z+LHknwxKrBzeVIcK3g==",
+      "type": "package",
+      "path": "bunifu.ui.winforms/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.txt",
+        "README.md",
+        "bunifu.ui.winforms.9.1.0.nupkg.sha512",
+        "bunifu.ui.winforms.nuspec",
+        "lib/net462/Bunifu.UI.WinForms.dll",
+        "lib/net462/Bunifu.UI.WinForms.xml",
+        "lib/net472/Bunifu.UI.WinForms.dll",
+        "lib/net472/Bunifu.UI.WinForms.xml",
+        "lib/net48/Bunifu.UI.WinForms.dll",
+        "lib/net48/Bunifu.UI.WinForms.xml",
+        "lib/net5.0-windows7.0/Bunifu.UI.WinForms.dll",
+        "lib/net5.0-windows7.0/Bunifu.UI.WinForms.xml",
+        "lib/net6.0-windows7.0/Bunifu.UI.WinForms.dll",
+        "lib/net6.0-windows7.0/Bunifu.UI.WinForms.xml",
+        "lib/net7.0-windows7.0/Bunifu.UI.WinForms.dll",
+        "lib/net7.0-windows7.0/Bunifu.UI.WinForms.xml",
+        "lib/net8.0-windows7.0/Bunifu.UI.WinForms.dll",
+        "lib/net8.0-windows7.0/Bunifu.UI.WinForms.xml",
+        "lib/net9.0-windows7.0/Bunifu.UI.WinForms.dll",
+        "lib/net9.0-windows7.0/Bunifu.UI.WinForms.xml"
+      ]
+    },
     "Microsoft.Extensions.Configuration/10.0.1": {
       "sha512": "njoRekyMIK+smav8B6KL2YgIfUtlsRNuT7wvurpLW+m/hoRKVnoELk2YxnUnWRGScCd1rukLMxShwLqEOKowDg==",
       "type": "package",
@@ -1750,10 +1859,40 @@
         "system.identitymodel.tokens.jwt.8.15.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
+    },
+    "System.Management/9.0.4": {
+      "sha512": "MfY9+SrkSvchAoFiChTkhQYCAjBaQQ9u3LwiKmho7oTbujucnxCzORlPgLhId/ChLSptsQ/1UmtPGLZaKYVdsA==",
+      "type": "package",
+      "path": "system.management/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net8.0/System.Management.dll",
+        "lib/net8.0/System.Management.xml",
+        "lib/net9.0/System.Management.dll",
+        "lib/net9.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net8.0/System.Management.dll",
+        "runtimes/win/lib/net8.0/System.Management.xml",
+        "runtimes/win/lib/net9.0/System.Management.dll",
+        "runtimes/win/lib/net9.0/System.Management.xml",
+        "system.management.9.0.4.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
+      "Bunifu.UI.WinForms >= 9.1.0",
       "Microsoft.Extensions.DependencyInjection >= 10.0.1",
       "Microsoft.Extensions.Hosting >= 10.0.1",
       "Microsoft.Extensions.Http >= 10.0.1",
@@ -1811,6 +1950,10 @@
       "net10.0-windows7.0": {
         "targetAlias": "net10.0-windows",
         "dependencies": {
+          "Bunifu.UI.WinForms": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[10.0.1, )"
@@ -1851,7 +1994,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

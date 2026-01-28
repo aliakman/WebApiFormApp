@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using WebApiFormApp.Models;
 using WebApiFormApp.Statics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WebApiFormApp.Services
 {
@@ -22,6 +24,35 @@ namespace WebApiFormApp.Services
                 _httpClient.DefaultRequestHeaders.Authorization =
                    new AuthenticationHeaderValue("Bearer", _info.AccessToken);
             }
+        }
+
+        public async Task<bool> CreateUserAsync(UserDto newUser)
+        {
+            //if (!string.IsNullOrEmpty(_info.AccessToken))
+            //{
+            //    _httpClient.DefaultRequestHeaders.Authorization =
+            //        new AuthenticationHeaderValue("Bearer", _info.AccessToken);
+            //}
+
+            var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}user/register", 
+                new {
+                    newUser.FirstName,
+                    newUser.LastName,
+                    newUser.Username,
+                    newUser.Email,
+                    newUser.Password
+                });
+            
+            var jsonString = await response.Content.ReadAsStringAsync();
+
+            var result = JsonConvert.DeserializeObject<ApiResult<UserDto>>(jsonString);
+
+            if (result != null && result.IsSuccess)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public async Task<UserDto> GetMyProfile()

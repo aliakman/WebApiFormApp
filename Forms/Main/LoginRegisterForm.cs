@@ -1,21 +1,25 @@
 ﻿using WebApiFormApp.Models;
 using WebApiFormApp.Services;
-//using WebApiFormApp.Services;
-//using WebApiFormApp.Statics;
 
 namespace WebApiFormApp
 {
     public partial class LoginRegisterForm : Form
     {
 
-        //private readonly IApiService _apiService;
         private readonly AuthService _authService;
+        private readonly UserService _userService;
 
-        public LoginRegisterForm(/*IApiService apiService*/AuthService authService)
+        public LoginRegisterForm(AuthService authService, UserService userService)
         {
             InitializeComponent();
-            //_apiService = apiService;
             _authService = authService;
+            _userService = userService;
+        }
+
+        private void SetPanels(bool isLoginActive)
+        {
+            pnlLogin.Visible = isLoginActive;
+            pnlReg.Visible = !isLoginActive;
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -26,21 +30,10 @@ namespace WebApiFormApp
                 return;
             }
 
-            // 2. API'ye giriş isteği gönder
             var success = await _authService.LoginAsync(txtEmail.Text, txtPassword.Text);
 
             if (success)
             {
-                //var users = await _apiService.GetUsersAsync();
-                //foreach (var user in users)
-                //{
-                //    if (user.Email.ToString() == txtEmail.Text)
-                //    {
-                //        Info.SetID(new Guid(user.Id.ToString()));
-                //        break;
-                //    }
-                //}
-
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
@@ -50,52 +43,56 @@ namespace WebApiFormApp
             }
         }
 
-        private async void btnRegister_Click(object sender, EventArgs e)
+        private void txtPassword_TextChange(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtRegFirstName.Text) ||
-                string.IsNullOrWhiteSpace(txtRegLastName.Text) ||
-                string.IsNullOrWhiteSpace(txtRegUserName.Text) ||
-                string.IsNullOrWhiteSpace(txtRegEmail.Text) ||
-                txtPassword.Text.Length < 6)
-            {
-                MessageBox.Show("Lütfen tüm alanları doldurun ve şifrenin en az 6 karakter olduğundan emin olun.");
-                return;
-            }
+            txtPassword.PasswordChar = string.IsNullOrEmpty(txtPassword.Text) ? '\0' : '*';
+        }
 
-            //var newUser = new UserCreateRequest(
-            //    FirstName: txtRegFirstName.Text,
-            //    LastName: txtRegLastName.Text,
-            //    UserName: txtRegUserName.Text,
-            //    Email: txtEmail.Text.Trim(),
-            //    Password: txtPassword.Text
-            //);
+        private void LoginRegisterForm_Load(object sender, EventArgs e)
+        {
 
-            //var success = await _apiService.RegisterAsync(newUser);
-
-            //if (success)
-            //{
-            //    MessageBox.Show("Kayıt başarılı! Giriş ekranına yönlendiriliyorsunuz.");
-            //    SetPanels(true);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Kayıt sırasında bir hata oluştu.");
-            //}
         }
 
         private void btnToReg_Click(object sender, EventArgs e)
         {
             SetPanels(false);
         }
+
         private void btnToLogin_Click(object sender, EventArgs e)
         {
             SetPanels(true);
         }
 
-        private void SetPanels(bool isLoginActive)
+        private async void btnRegister_Click(object sender, EventArgs e)
         {
-            pnlLogin.Visible = isLoginActive;
-            pnlReg.Visible = !isLoginActive;
+            if (string.IsNullOrWhiteSpace(txtRegFirstName.Text) ||
+                string.IsNullOrWhiteSpace(txtRegLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtRegUserName.Text) ||
+                string.IsNullOrWhiteSpace(txtRegEmail.Text) ||
+                txtRegPw.Text.Length < 6)
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurun ve şifrenin en az 6 karakter olduğundan emin olun.");
+                return;
+            }
+
+            var newUser = new UserDto();
+            newUser.FirstName = txtRegFirstName.Text;
+            newUser.LastName = txtRegLastName.Text;
+            newUser.Username = txtRegUserName.Text;
+            newUser.Email = txtRegEmail.Text.Trim();
+            newUser.Password = txtRegPw.Text.Trim();
+
+            var success = await _userService.CreateUserAsync(newUser);
+
+            if (success)
+            {
+                MessageBox.Show("Kayıt başarılı! Giriş ekranına yönlendiriliyorsunuz.");
+                SetPanels(true);
+            }
+            else
+            {
+                MessageBox.Show("Kayıt sırasında bir hata oluştu.");
+            }
         }
     }
 }
